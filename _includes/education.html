@@ -1,0 +1,18 @@
+{% assign education = site.data.data.education %}
+
+<span class="section-title"><b>Education</b></span>
+<hr style="margin-top: 0;">
+
+{% for edu in education %}
+<p style="margin-top: 0;">
+    <i>{{ edu.university }}</i>
+    <span><i>{{ edu.location }}</i></span><br>
+    
+
+    <b>{{ edu.subject }}:</b> {{ edu.degree }}
+    <span><b>Graduation:</b> {{ edu.graduation }}</span><br>
+
+    <b>{{ edu.extra-bold }}:</b> {{ edu.extra-text }}
+    <span><b>GPA:</b> {{ edu.gpa }}</span>
+</p>
+{% endfor %}

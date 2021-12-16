@@ -1,2 +1,25 @@
 
-other: Some other info.
+header:
+  name: First Last
+  location: City, State
+  number: +1 (111) 111-1111
+  email: example@example.com
+  custom-url: www.example.com
+
+education:
+  - university: University
+    location: City, State
+    subject: Computer Science
+    degree: Bacheor of Science
+    graduation: June 2021
+    extra-bold: Minor
+    extra-text: Mathematics
+    gpa: 4.00 
+  - university: University 2
+    location: City, State
+    subject: Computer Science
+    degree: Bacheor of Science
+    graduation: June 2021
+    extra-bold: Minor
+    extra-text: Mathematics
+    gpa: 4.00 
