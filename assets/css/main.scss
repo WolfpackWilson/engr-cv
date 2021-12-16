@@ -18,12 +18,35 @@ h1 {
     margin-bottom: 5px;
 }
 
+hr {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
 p > span {
     float: right
 }
 
 .section-title {
     text-transform: uppercase;
+}
+
+.content {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.content > :first-child {
+    margin-top: 0;
+}
+
+.content > *  {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.line-height {
+    line-height: 1.5;
 }
 
 #header-text {

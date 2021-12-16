@@ -1,0 +1,12 @@
+{% assign skills = site.data.data.skills %}
+
+<span class="section-title"><b>Technical Skills</b></span>
+<hr>
+
+<div class="content">
+    <ul>
+        {% for skill in skills %}
+        <li><b>{{ skill.group }}:</b> {{ skill.skills }}</li>
+        {% endfor %}
+    </ul>
+</div>

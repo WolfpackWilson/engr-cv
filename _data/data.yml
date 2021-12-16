@@ -1,3 +1,5 @@
+# The syntax formatting is very important here. Slight mistakes 
+# can cause everything to break.
 
 header:
   name: First Last
@@ -10,7 +12,7 @@ education:
   - university: University
     location: City, State
     subject: Computer Science
-    degree: Bacheor of Science
+    degree: Bachelor of Science
     graduation: June 2021
     extra-bold: Minor
     extra-text: Mathematics
@@ -18,8 +20,35 @@ education:
   - university: University 2
     location: City, State
     subject: Computer Science
-    degree: Bacheor of Science
-    graduation: June 2021
+    degree: Master of Science
+    graduation: June 2025
     extra-bold: Minor
     extra-text: Mathematics
     gpa: 4.00 
+
+skills:
+  - group: Languages
+    skills: |
+      Skill 1, Skill 2, Skill 3, ...
+  - group: Software
+    skills: |
+      Skill 1, Skill 2, Skill 3, ...
+
+experience:
+  - title: Programmer
+    field: Computer Science
+    date-range: Apr 2020-Jun 2021
+    employer: Company Name
+    location: City, State
+    details:
+      - bullet: Bullet point
+      - bullet: Bullet point
+      - bullet: Bullet point
+  - title: Manufacturing
+    field: Engineering
+    date-range: Aug 2019-Apr 2020
+    employer: Company Name
+    location: City, State
+    details:
+      - bullet: Bullet point
+      - bullet: Bullet point
