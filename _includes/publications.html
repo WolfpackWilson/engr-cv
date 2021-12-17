@@ -1,0 +1,16 @@
+{% assign publications = site.data.data.publications %}
+
+<span class="section-title"><b>Publications</b></span>
+<hr>
+
+<div class="content">
+    <ul>
+        {% for pub in publications %}
+        <li style="margin-bottom: 5px;">
+            <b>{{ pub.title }}:</b><br>
+            <i>{{ pub.date }} • {{ pub.journal }}</i>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+

@@ -1,8 +1,10 @@
 # The syntax formatting is very important here. Slight mistakes 
 # can cause everything to break.
 
+title: First Last's CV
+
 header:
-  name: First Last
+  name: First (Alt First) Last
   location: City, State
   number: +1 (111) 111-1111
   email: example@example.com
@@ -11,32 +13,30 @@ header:
 education:
   - university: University
     location: City, State
-    subject: Computer Science
-    degree: Bachelor of Science
+    subject: Degree Subject
+    degree: Master of ...
+    graduation: June 2025
+
+  - university: University
+    location: City, State
+    subject: Degree Subject
+    degree: Bachelor of ...
     graduation: June 2021
     extra-bold: Minor
-    extra-text: Mathematics
-    gpa: 4.00 
-  - university: University 2
-    location: City, State
-    subject: Computer Science
-    degree: Master of Science
-    graduation: June 2025
-    extra-bold: Minor
-    extra-text: Mathematics
+    extra-text: Subject
     gpa: 4.00 
 
 skills:
-  - group: Languages
+  - group: Skill Group
     skills: |
       Skill 1, Skill 2, Skill 3, ...
-  - group: Software
+  - group: Skill Group
     skills: |
       Skill 1, Skill 2, Skill 3, ...
 
 experience:
-  - title: Programmer
-    field: Computer Science
+  - title: Role/Title
+    field: Field of Work
     date-range: Apr 2020-Jun 2021
     employer: Company Name
     location: City, State
@@ -44,11 +44,47 @@ experience:
       - bullet: Bullet point
       - bullet: Bullet point
       - bullet: Bullet point
-  - title: Manufacturing
-    field: Engineering
+  - title: Role/Title
+    field: Field of Work
     date-range: Aug 2019-Apr 2020
     employer: Company Name
     location: City, State
     details:
       - bullet: Bullet point
       - bullet: Bullet point
+
+publications:
+  - title: Journal Title
+    date: Jan 1, 2021
+    journal: Journal Name (JN)
+  - title: Journal Title
+    date: Jan 2, 2019
+    journal: Journal Name (JN)
+
+certifications:
+  - name: Certificate Title (CT)
+    date-range: 2021
+  - name: Certificate Title (CT)
+    date-range: 2012-2021
+
+achievements:
+  - name: Achievement or Acivity Name
+    date-range: 2015-Present
+  - name: Achievement or Activity Name
+    optional: Optional Title (2017-2018)
+    date-range: 2016-2018
+
+projects:
+  - name: Name of Project
+    field: Project Field(s)
+    date-range: Dec 2021
+    details:
+      - bullet: Bullet point
+      - bullet: Bullet point
+  - name: Name of Project
+    field: Project Fields(s)
+    date-range: Aug 2020-Sep 2020
+    details:
+      - bullet: Bullet point
+      - bullet: Bullet point
+

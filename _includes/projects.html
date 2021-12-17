@@ -1,0 +1,19 @@
+{% assign projects = site.data.data.projects %}
+
+<span class="section-title"><b>Projects</b></span>
+<hr>
+
+<div class="content">
+    {% for proj in projects %}
+    <p style="margin: 0;">
+        <b>{{ proj.name }},</b> {{ proj.field }}
+        <span><b>{{ proj.date-range }}</b></span>
+    </p>
+    <ul style="margin-top: 0;">
+        {% for detail in proj.details %}
+            <li>{{ detail.bullet }}</li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</div>
+

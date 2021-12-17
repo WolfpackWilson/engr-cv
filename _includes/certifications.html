@@ -1,0 +1,13 @@
+{% assign certifications = site.data.data.certifications %}
+
+<span class="section-title"><b>Certifications</b></span>
+<hr>
+
+<div class="content">
+    <ul>
+        {% for cert in certifications %}
+        <li>{{ cert.name }} <span><b>{{ cert.date-range }}</b></span></li>
+        {% endfor %}
+    </ul>
+</div>
+

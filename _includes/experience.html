@@ -5,16 +5,17 @@
 
 <div class="content">
     {% for exp in experience %}
-    <p  class="line-height" style="margin-bottom: 5px;">
+    <p class="line-height" style="margin-bottom: 5px;">
         <b>{{ exp.title }},</b> {{ exp.field }}
         <span><b>{{ exp.date-range }}</b></span><br>
         <i>{{ exp.employer }}</i>
         <span><i>{{ exp.location }}</i></span><br>
     </p>
-    <ul style="margin: 0;">
+    <ul style="margin-top: 0;">
         {% for detail in exp.details %}
             <li>{{ detail.bullet }}</li>
         {% endfor %}
     </ul>
     {% endfor %}
 </div>
+

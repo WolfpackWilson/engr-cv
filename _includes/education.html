@@ -9,11 +9,14 @@
         <i>{{ edu.university }}</i>
         <span><i>{{ edu.location }}</i></span><br>
 
-        <b>{{ edu.subject }}:</b> {{ edu.degree }}
+        <b>{{ edu.subject }},</b> {{ edu.degree }}
         <span><b>Graduation:</b> {{ edu.graduation }}</span><br>
 
+        {% if edu.extra-bold %}
         <b>{{ edu.extra-bold }}:</b> {{ edu.extra-text }}
         <span><b>GPA:</b> {{ edu.gpa }}</span>
+        {% endif %}
     </p>
     {% endfor %}
 </div>
+

@@ -1,0 +1,16 @@
+{% assign achievements = site.data.data.achievements %}
+
+<span class="section-title"><b>Achievements & Activities</b></span>
+<hr>
+
+<div class="content">
+    <ul>
+        {% for ach in achievements %}
+        <li>{{ ach.name }}{% if ach.optional %}, 
+            <i>{{ ach. optional}}</i>
+            {% endif %}
+            <span><b>{{ ach.date-range }}</b></span></li>
+        {% endfor %}
+    </ul>
+</div>
+
