@@ -3,17 +3,20 @@
 <span class="section-title"><b>Projects</b></span>
 <hr>
 
-<div class="content">
+<div class="content" id="projects">
     {% for proj in projects %}
-    <p style="margin: 0;">
-        <b>{{ proj.name }},</b> {{ proj.field }}
-        <span><b>{{ proj.date-range }}</b></span>
-    </p>
-    <ul style="margin-top: 0;">
-        {% for detail in proj.details %}
-            <li>{{ detail.bullet }}</li>
-        {% endfor %}
-    </ul>
+    <div class="content-inner">
+        <div class="float-right line-height">
+            <div><b>{{ proj.name }},</b> {{ proj.field }}</div>
+            <div><b>{{ proj.date-range }}</b></div>
+        </div>
+
+        <ul>
+            {% for detail in proj.details %}
+                <li>{{ detail.bullet }}</li>
+            {% endfor %}
+        </ul>
+    </div>
     {% endfor %}
 </div>
 

@@ -3,10 +3,12 @@
 <span class="section-title"><b>Technical Skills</b></span>
 <hr>
 
-<div class="content">
+<div class="content" id="skills">
     <ul>
         {% for skill in skills %}
-        <li><b>{{ skill.group }}:</b> {{ skill.skills }}</li>
+        <div class="content-inner">
+            <li><b>{{ skill.group }}:</b> {{ skill.skills }}</li>
+        </div>
         {% endfor %}
     </ul>
 </div>

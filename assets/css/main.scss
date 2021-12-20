@@ -4,15 +4,20 @@
 
 @import "default";
 
+// Document Properties
+
 html {
     max-width: 900px;
     margin: 0 auto;
+    float: none;
 }
 
 body {
     font-family: cambria;
     font-size: 11pt;
 }
+
+// Header
 
 h1 {
     text-align: center;
@@ -26,10 +31,61 @@ h1 {
     font-size: 10pt;
 }
 
+// Section Headers
+
+.section-title {
+    text-transform: uppercase;
+}
+
 hr {
     margin-top: 0;
     margin-bottom: 5px;
-    border: 1px solid
+    border: 1px solid;
+}
+
+// Section Content
+
+.content {
+    text-align: justify;
+}
+
+.content > :first-child {
+    margin-top: 0;
+}
+
+.content > :last-child,
+#publications li {
+    margin-bottom: 5px;
+}
+
+#education > * {
+    margin-bottom: 7.5px;
+}
+
+#education > :last-child {
+    margin-bottom: 2.5px;
+}
+
+#experience > :not(:last-child) {
+    margin-bottom: 10px;
+}
+
+// Format Modifiers
+
+.line-height {
+    line-height: 1.5;
+}
+
+.float-right {
+    display: flex; 
+    justify-content: space-between;
+}
+
+// List Modifiers
+
+ul {
+    margin: 0 5px;
+    padding-left: 25px;
 }
 
 li {
@@ -45,29 +101,15 @@ li::before {
     font-size: 0.8em;
 }
 
-p > span, li > span {
-    float: right
-}
+// Print Settings
 
-.section-title {
-    text-transform: uppercase;
-}
+@media print {
+    .content-inner {
+        page-break-inside: avoid;
+    }
 
-.content {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.content > *  {
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-.content > :first-child {
-    margin-top: 0;
-}
-
-.line-height {
-    line-height: 1.5;
+    hr, .section-title {
+        page-break-inside: avoid;
+    }
 }
 

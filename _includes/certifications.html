@@ -3,10 +3,15 @@
 <span class="section-title"><b>Certifications</b></span>
 <hr>
 
-<div class="content">
+<div class="content" id="certifications">
     <ul>
         {% for cert in certifications %}
-        <li>{{ cert.name }} <span><b>{{ cert.date-range }}</b></span></li>
+        <div class="content-inner">
+            <li class="float-right">
+                <div>{{ cert.name }}</div>
+                <div><b>{{ cert.date-range }}</b></div>
+            </li>
+        </div>
         {% endfor %}
     </ul>
 </div>

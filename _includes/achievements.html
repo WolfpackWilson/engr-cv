@@ -3,13 +3,22 @@
 <span class="section-title"><b>Achievements & Activities</b></span>
 <hr>
 
-<div class="content">
+<div class="content" id="achievements">
     <ul>
         {% for ach in achievements %}
-        <li>{{ ach.name }}{% if ach.optional %}, 
-            <i>{{ ach. optional}}</i>
-            {% endif %}
-            <span><b>{{ ach.date-range }}</b></span></li>
+        <div class="content-inner">
+            <li class="float-right">
+                <div>
+                    {{ ach.name }}{% if ach.optional %}, 
+                    <i>{{ ach. optional}}</i>
+                    {% endif %}
+                </div>
+                
+                <div>
+                    <b>{{ ach.date-range }}</b>
+                </div>
+            </li>
+        </div>
         {% endfor %}
     </ul>
 </div>

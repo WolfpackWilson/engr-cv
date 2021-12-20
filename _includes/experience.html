@@ -3,19 +3,25 @@
 <span class="section-title"><b>Work Experience</b></span>
 <hr>
 
-<div class="content">
+<div class="content" id="experience">
     {% for exp in experience %}
-    <p class="line-height" style="margin-bottom: 5px;">
-        <b>{{ exp.title }},</b> {{ exp.field }}
-        <span><b>{{ exp.date-range }}</b></span><br>
-        <i>{{ exp.employer }}</i>
-        <span><i>{{ exp.location }}</i></span><br>
-    </p>
-    <ul style="margin-top: 0;">
-        {% for detail in exp.details %}
-            <li>{{ detail.bullet }}</li>
-        {% endfor %}
-    </ul>
+    <div class="content-inner">
+        <div class="float-right line-height">
+            <div><b>{{ exp.title }},</b> {{ exp.field }}</div>
+            <b>{{ exp.date-range }}</b>
+        </div>
+
+        <div class="float-right line-height">
+            <i>{{ exp.employer }}</i>
+            <i>{{ exp.location }}</i>
+        </div>
+
+        <ul>
+            {% for detail in exp.details %}
+                <li>{{ detail.bullet }}</li>
+            {% endfor %}
+        </ul>
+    </div>
     {% endfor %}
 </div>
 

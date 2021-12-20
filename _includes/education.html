@@ -3,20 +3,26 @@
 <span class="section-title"><b>Education</b></span>
 <hr>
 
-<div class="content">
+<div class="content" id="education">
     {% for edu in education %}
-    <p class="line-height">
-        <i>{{ edu.university }}</i>
-        <span><i>{{ edu.location }}</i></span><br>
+    <div class="content-inner line-height">
+        <div class="float-right">
+            <i>{{ edu.university }}</i>
+            <i>{{ edu.location }}</i>
+        </div>
 
-        <b>{{ edu.subject }},</b> {{ edu.degree }}
-        <span><b>Graduation:</b> {{ edu.graduation }}</span><br>
+        <div class="float-right">
+            <div><b>{{ edu.subject }},</b> {{ edu.degree }}</div>
+            <div><b>Graduation:</b> {{ edu.graduation }}</div>
+        </div>
 
         {% if edu.extra-bold %}
-        <b>{{ edu.extra-bold }}:</b> {{ edu.extra-text }}
-        <span><b>GPA:</b> {{ edu.gpa }}</span>
+        <div class="float-right">
+            <div><b>{{ edu.extra-bold }}:</b> {{ edu.extra-text }}</div>
+            <div><b>GPA:</b> {{ edu.gpa }}</div>
+        </div>
         {% endif %}
-    </p>
+    </div>
     {% endfor %}
 </div>
 
