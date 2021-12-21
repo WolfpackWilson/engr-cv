@@ -1,7 +1,7 @@
 # Engineering CV/Resume Template
 This repository is built for easily constructing a CV or resume by simply adding 
 information to the `_data\data.yml` file. The document is hosted online using GitHub 
-Pages and Jekyll.
+Pages and Jekyll. See the live example [here](https://theeric960.github.io/engr-cv/).
 
 ## Customizing the Template
 The template is customizable to fit each user's needs. The `_data` folder contains
